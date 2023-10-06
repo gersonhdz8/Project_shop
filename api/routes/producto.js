@@ -22,7 +22,7 @@ appProducto.get("/categoria3", limitGetProducto(), version({
 appProducto.get("/categoria4", limitGetProducto(), version({
     "1.0.0": getProductoCategoria4V1,
 }));
-appProducto.post("/categoria5", limitGetProducto(), version({
+appProducto.get("/categoria5", limitGetProducto(), version({
     "1.0.0": getProductoCategoria5V1,
 }));
 

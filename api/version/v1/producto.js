@@ -7,7 +7,7 @@ export const getProductoV1 = async (req, res, next) => {
     if(!req.rateLimit) return;
     if(await db.status==500) res.status(await db.status).json({link: `https://http.cat/images/${await db.status}.jpg`, message:":(", data: await db});   
 
-    res.status(200).json({data: await db.collection("products").find({}).toArray()})
+    res.status(200).json({data: await db.collection("products").find().toArray()})
 }
 export const getProductoCategoria1V1 = async (req, res, next) => {
     if(!req.rateLimit) return;
