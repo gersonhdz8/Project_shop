@@ -1,0 +1,3 @@
+###Todos los productos
+GET http://127.0.0.10:5029/producto/
+Content-Type: application/json
